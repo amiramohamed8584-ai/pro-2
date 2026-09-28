@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.CSS">
+    <link rel="stylesheet" href="CSS/all.css">
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <header class="z-20 w-full fixed top-0 bg-amber-100">
+  <nav class="flex justify-between items-center px-4 py-5 bg-black/30 backdrop-blur-md">
+    <div class="md:hidden">
+      <input type="checkbox" id="menu-toggle" class="hidden peer">
+      <label for="menu-toggle" class="text-amber-100 text-2xl cursor-pointer">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <div class="hidden peer-checked:flex flex-col items-center gap-4 fixed top-16 left-0 w-full h-[calc(100vh-64px)] bg-black/95 p-6">
+        <a href="#" class="text-amber-100 text-lg font-bold">الرئيسية</a>
+        <a href="#" class="text-amber-100 text-lg font-bold">الديكور</a>
+        <a href="#" class="text-amber-100 text-lg font-bold">الاثاث</a>
+        <a href="#" class="text-amber-100 text-lg font-bold">اتصل بنا</a>
+        <input type="text" placeholder="...ابحث عن جناح" class="mt-6 text-right px-6 py-3 text-sm border rounded">
+      </div>
+    </div>
+    <div class="hidden md:flex items-center gap-6">
+       <button onclick="document.getElementById('loginForm').classList.remove('hidden')" class="border rounded px-4 py-3 hover:bg-amber-100">تسجيل الدخول</button>
+      <input type="text" placeholder="...ابحث عن جناح" class="text-right px-4 py-1.5 text-sm border rounded">
+      <ul class="flex items-center text-sm font-light gap-6">
+        <li><a href="#" class="transition text-amber-100 block py-2 font-bold">اتصل بنا</a></li>
+        <li><a href="#" class="transition text-amber-100 block py-2 font-bold">الاثاث</a></li>
+        <li><a href="#" class="transition text-amber-100 block py-2 font-bold">الديكور</a></li>
+        <li><a href="#" class="transition text-amber-100 block py-2 font-bold">الرئيسية</a></li>
+      </ul>
+    </div>
+    <div class="flex flex-col">
+      <span class="text-xl md:text-2xl font-bold text-amber-100 mr-4 md:mr-8 tracking-widest">HOME DECORE</span>
+    </div>
+  </nav>
+</header>
+  <div id="loginForm" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+
+  <div class="bg-white w-96 rounded-2xl p-8 shadow-2xl">
+
+    <h2 class="text-2xl font-bold text-center mb-6">
+      تسجيل الدخول
+    </h2>
+
+    <form>
+
+      <div class="mb-4">
+        <label class="block mb-2">
+          Email
+        </label>
+
+        <input
+          type="email"
+          placeholder="Enter email"
+          class="w-full border border-gray-300 rounded-lg p-3 outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <div class="mb-4">
+        <label class="block mb-2">
+          Password
+        </label>
+
+        <input
+          type="password"
+          placeholder="Enter password"
+          class="w-full border border-gray-300 rounded-lg p-3 outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <button
+        type="submit"
+        class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600">
+        دخول
+      </button>
+
+    </form>
+
+    <button
+      onclick="document.getElementById('loginForm').classList.add('hidden')"
+      class="w-full mt-4 text-gray-500 hover:text-black">
+      إغلاق
+    </button>
+
+  </div>
+</div>
+<!-- ...............................................................1............................................ -->
+<main class="relative w-full h-screen overflow-hidden">
+            <img src="image/decor-15.jpeg " class="absolute inset-0 w-full h-full object-cover object-center">
+            <div class=" absolute inset-0 bg-black/25 "></div>
+            <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4 pt-16">
+                <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">ديكور يزين حياتك</h1>
+                <p class="mt-4 text-sm sm:text-lg md:text-xl max-w-xl font-bold text-amber-200">اكتشف اجمل التصاميم واللمسات العصرية التي تضيف لمسه من الراحه والاناقه الي منزلك</p>
+                <button class="mt-6 px-6 py-3 bg-amber-100 text-stone-900 rounded-full text-sm sm:text-base font-semibold transition-all hover:bg-amber-200">تسوق الأن </button>
+            </div>
+            <div class="fixed right-3 md:right-4 top-[53%] z-50 flex flex-col gap-3 -translate-y-1/2">
+                <a href="#" class="w-8 h-8 sm:w-9 sm:h-9 bg-black/50 backdrop-blur-md border border-white/20 text-white rounded-full flex items-center justify-center "><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="w-8 h-8 sm:w-9 sm:h-9 bg-black/50 backdrop-blur-md border border-white/20 text-white rounded-full flex items-center justify-center "><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="w-8 h-8 sm:w-9 sm:h-9 bg-black/50 backdrop-blur-md border border-white/20 text-white rounded-full flex items-center justify-center "><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </main>
+        <!-- ........................................................2.................................................... -->
+        <div class="text-center mt-7 ">
+            <h1 class="tracking-[.2em] text-3xl text-black/70 font-bold block">QUALITY FURNITURE</h1>
+        </div>
+            <section style="width:85%;max-width: 1200px;margin: 30px auto;border-radius: 20px;overflow: hidden;position: relative;">
+            <div class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar">
+                <div id="slide1" class="snap-center relative flex-none" style="min-width: 100%; max-width: 100%; flex: 0 0 100%; height: 530px;">
+                    <img src="image/decor-1.jpeg" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/30"></div>
+                    <div class="absolute inset-0 flex items-center justify-between px-4">
+                        <a href="#slide4" class=" text-white w-8 h-8 rounded-full flex items-center justify-center text-2xl ">&lt;</a>
+                        <a href="#slide2" class=" text-white w-8 h-8 rounded-full flex items-center justify-center text-2xl ">&gt;</a>
+                    </div>
+                    <div class="absolute bottom-28 left-0 text-center right-0 z-20">
+                        <h3 class="text-white text-2xl font-light tracking-widest">Make Your Home More beautiful</h3>
+                        <p class="text-amber-200 text-lg mt-2 tracking-widest">stylish furniture that turns your house into ahome</p>
+                        <a href="#" class="bg-white text-black text-xs tracking-widest px-8 py-2 inline-block rounded-full mt-3 hover:bg-black hover:text-white duration-300">Shop Now</a>
+                    </div>
+                </div>
+                <div id="slide2" class="snap-center relative" style="min-width: 100%; max-width: 100%; flex: 0 0 100%; height: 530px;">
+                    <img src="image/decor-3.jpeg" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/50"></div>
+                    <div class="absolute inset-0 flex items-center justify-between px-4">
+                        <a href="#slide1" class=" text-white w-8 h-8 rounded-full flex items-center justify-center text-2xl ">&lt;</a>
+                        <a href="#slide3" class=" text-white w-8 h-8 rounded-full flex items-center justify-center text-2xl ">&gt;</a>
+                    </div>
+                    <div class="absolute bottom-28 left-0 text-center right-0 z-20">
+                        <h3 class="text-white text-2xl font-light tracking-widest">Make Your Home More beautiful</h3>
+                        <p class=" text-amber-200 text-lg mt-2 tracking-widest">stylish furniture that turns your house into ahome</p>
+                        <a href="#" class="bg-white text-black text-xs tracking-widest px-8 py-2 inline-block rounded-full mt-3 hover:bg-black hover:text-white duration-300">EXPLORE MORE</a>
+                    </div>
+                </div>
+                <div id="slide3" class="snap-center relative" style="min-width: 100%; max-width: 100%; flex: 0 0 100%; height: 530px;">
+                    <img src="image/decor-9.jpeg" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/30"></div>
+                    <div class="absolute inset-0 flex items-center justify-between px-4">
+                        <a href="#slide2" class=" text-white w-8 h-8 rounded-full flex items-center justify-center text-2xl ">&lt;</a>
+                        <a href="#slide4" class=" text-white w-8 h-8 rounded-full flex items-center justify-center text-2xl ">&gt;</a>
+                    </div>
+                    <div class="absolute bottom-28 left-0 text-center right-0 z-20">
+                        <h3 class="text-white text-2xl font-light tracking-widest">Make Your Home More beautiful</h3>
+                        <p class="text-amber-200 text-lg mt-2 tracking-widest">stylish furniture that turns your house into ahome</p>
+                        <a href="#" class="bg-white text-black text-xs tracking-widest px-8 py-2 inline-block rounded-full mt-3 hover:bg-black hover:text-white duration-300">EXPLORE MORE</a>
+                    </div>
+                </div>
+                <div id="slide4" class="snap-center relative" style="min-width: 100%; max-width: 100%; flex: 0 0 100%; height: 530px;">
+                    <img src="image/decor-10.jpeg" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/30"></div>
+                    <div class="absolute inset-0 flex items-center justify-between px-4">
+                        <a href="#slide3" class=" text-white w-8 h-8 rounded-full flex items-center justify-center text-2xl ">&lt;</a>
+                        <a href="#slide1" class=" text-white w-8 h-8 rounded-full flex items-center justify-center text-2xl ">&gt;</a>
+                    </div>
+                     <div class="absolute bottom-28 left-0 text-center right-0 z-20">
+                        <h3 class="text-white text-2xl font-light tracking-widest">Make Your Home More beautiful</h3>
+                        <p class="text-amber-200 text-lg mt-2 tracking-widest">stylish furniture that turns your house into ahome</p>
+                        <a href="#" class="bg-white text-black text-xs tracking-widest px-8 py-2 inline-block rounded-full mt-3 hover:bg-black hover:text-white duration-300">EXPLORE MORE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ..................................................................3............................................................. -->
+        <section class=" container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 p-14">
+            <div class="relative h-80  group overflow-hidden ">
+                <img src="image/decor-16.jpeg" class="w-full h-full object-cover transition-all duration-700  rounded-tr-[90px] rounded-bl-[90px] group-hover:rounded-tr-none group-hover:rounded-bl-none group-hover:rounded-tl-[80px] group-hover:rounded-br-[80px]">
+                <div class="absolute inset-0 bg-black/40 flex flex-col justify-end items-center text-center p-6 text-white transition-all duration-700  rounded-tr-[90px] rounded-bl-[90px] group-hover:rounded-tr-none group-hover:rounded-bl-none group-hover:rounded-tl-[90px] group-hover:rounded-br-[90px]">
+                    <h3 class="text-xl font-bold tracking-widest">LIVING ROOM FURNITURE</h3>
+                    <p class="text-sm opacity-90 mt-1">Stylish & Comfortable Piecesfor Your Living Space</p>
+                </div>
+            </div>
+            <div class="relative h-80 group">
+                <img src="image/decor-14.jpeg" class="w-full h-full object-cover transition-all duration-700 rounded-tr-[90px] rounded-bl-[90px] group-hover:rounded-tr-none group-hover:rounded-bl-none group-hover:rounded-tl-[90px] group-hover:rounded-br-[90px]">
+                <div class="absolute inset-0 bg-black/40 flex flex-col justify-end items-center text-center p-6 text-white transition-all duration-700  rounded-tr-[90px] rounded-bl-[90px] group-hover:rounded-tr-none group-hover:rounded-bl-none group-hover:rounded-tl-[90px] group-hover:rounded-br-[90px]">
+                    <h3 class="text-xl font-bold tracking-widest">BEDROOM FURNITURE</h3>
+                    <p class="text-sm opacity-90 mt-1">Elegant Designs fora Better Tomorrow</p>
+                </div>
+            </div>
+            <div class="relative h-80 group">
+                <img src="image/decor-13.jpeg" class="w-full h-full object-cover transition-all duration-700 rounded-tr-[90px] rounded-bl-[90px] group-hover:rounded-tr-none group-hover:rounded-bl-none group-hover:rounded-tl-[90px] group-hover:rounded-br-[90px]">
+                <div class="absolute inset-0 bg-black/40 flex flex-col justify-end items-center text-center p-6 text-white  transition-all duration-700  rounded-tr-[90px] rounded-bl-[90px] group-hover:rounded-tr-none group-hover:rounded-bl-none group-hover:rounded-tl-[90px] group-hover:rounded-br-[90px]">
+                    <h3 class="text-xl font-bold tracking-widest">DINING FURNITURE</h3>
+                    <p class="text-sm opacity-90 mt-1">Bring People Together Around Beautiful Moments</p></div>
+            </div>
+        </section>
+        <!-- ...........................................................4................................................... -->
+        <section class="relative w-full m-h-[700px] flex items-center ju py-16 px-4 bg-cover bg-center" style="background-image: url(image/decor-14.jpeg); background-attachment: fixed;">
+            <div class="absolute inset-0 bg-black/45"></div>
+            <div class="relative z-10 w-full max-w-3xl m-auto outline-solid outline-white outline-1 rounded-xl">
+                <details class="group border-b border-white py-6">
+                    <summary class="flex justify-between items-center list-none cursor-pointer ml-4">
+                        <span class="text-white font-bold tracking-[.2em] text-[18px]">LIVING ROOM FURNITURE</span>
+                    </summary>
+                     <p class="ml-4 hidden group-open:block pt-4 text-amber-100 text-[15px] leading-7 font-light max-w-xl">Create a warm and comfortable living room with our modern sofas, tables, and elegant furniture pieces.</p>
+                </details>
+                <details class="group border-b border-white py-6">
+                    <summary class="flex justify-between items-center list-none cursor-pointer ml-4">
+                        <span class="text-white font-bold tracking-[.2em] text-[18px]">MODERN FURNITURE</span>
+                    </summary>
+                     <p class="ml-4 hidden group-open:block pt-4 text-amber-100 text-[15px] leading-7 font-light max-w-xl">Discover stylish and comfortable furniture designed to make
+your home elegant, functional, and welcoming.</p>
+                </details>
+                <details class="group border-b py-6">
+                    <summary class="flex justify-between items-center list-none cursor-pointer ml-4">
+                        <span class="text-white font-bold tracking-[.2em] text-[18px]">DINING ROOM FURNITURE</span>
+                    </summary>
+                    <p class="ml-4 hidden group-open:block pt-4 text-amber-100 text-[15px] leading-7 font-light max-w-xl">Enjoy beautiful dining spaces with stylish tables and chairs designed for comfort, quality, and memorable moments.</p>
+                </details>
+            </div>
+        </section>
+        <!-- .......................................................................5..................................................... -->
+        <section class="py-24 bg-[#f9f6f2]">
+            <h2 class="text-center text-2xl font-bold tracking-[0.2em] mb-16 text-[#4g5h5j]">FURNITURE COLLECTIONS</h2>
+            <div class="flex justify-center gap-6 flex-wrap">
+                <div class="relative w-80 h-80 rounded-2xl overflow-hidden
+                before:content-[''] before:absolute before:inset-0 before:bg-black/10
+                after:content-[''] after:absolute after:inset-0 after:bg-[#1f1a16]/40 after:opacity-0 after:transition-all after:duration-500
+                hover:after:opacity-50 group cursor-pointer">
+                <img src="image/decor-11.jpeg" class="w-full h-full object-cover transition duration-700">
+                <div class="absolute bottom-8 left-8 text-white transition duration-500 group-hover:translate-y-0 translate-y-4">
+                    <p class="text-[10px] tracking-[0.3em] opacity-70">01</p>
+                    <p class="font-bold text-xl mt-1">BEDROOM FURNITURE</p>
+                    <p class="text-xs opacity-0 group-hover:opacity-70 transition duration-500 mt-2">Comfort & Elegance</p>
+                </div>
+            </div>
+            <div class="relative w-80 h-80 rounded-2xl overflow-hidden
+                before:content-[''] before:absolute before:inset-0 before:bg-black/10
+                after:content-[''] after:absolute after:inset-0 after:bg-[#1f1a16]/40 after:opacity-0 after:transition-all after:duration-500
+                hover:after:opacity-50 group cursor-pointer">
+                <img src="image/decor-13.jpeg" class="w-full h-full object-cover transition duration-700">
+                <div class="absolute bottom-8 left-8  text-white transition duration-500 group-hover:translate-y-0 translate-y-4">
+                    <p class="text-[10px] tracking-[0.3em] opacity-70">02</p>
+                    <p class="font-bold text-xl mt-1">DINING FURNITURE</p>
+                    <p class="text-xs opacity-0 group-hover:opacity-70 transition duration-500 mt-2">Style & Quality</p>
+                </div>
+            </div>
+            <div class="relative w-80 h-80 rounded-2xl overflow-hidden
+                before:content-[''] before:absolute before:inset-0 before:bg-black/10
+                after:content-[''] after:absolute after:inset-0 after:bg-[#1f1a16]/40 after:opacity-0 after:transition-all after:duration-500
+                hover:after:opacity-50 group cursor-pointer">
+                <img src="image/decor-16.jpeg" class="w-full h-full object-cover transition duration-700">
+                <div class="absolute bottom-8 left-8 text-white transition duration-500 group-hover:translate-y-0 translate-y-4">
+                    <p class="text-[10px] tracking-[0.3em] opacity-70">03</p>
+                    <p class="font-bold text-xl mt-1">LIVING ROOM FURNITURE</p>
+                    <p class="text-xs opacity-0 group-hover:opacity-70 transition duration-500 mt-2">Modern Comfort</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ....................................................................6................................................... -->
+    <section class="py-16 px-6 bg-white">
+  <div class="text-center mb-12">
+    <h2 class="text-2xl font-bold tracking-[.2em]">FURNITURE JOURNAL</h2>
+  </div>
+
+  <div class="max-w-5xl mx-auto flex flex-col gap-8">
+    <div class="bg-[#fdf9f3] flex items-center overflow-hidden shadow-sm border border-black/5 border-l-4 border-l-[#6ac4d3]
+                [border-radius:0px_0px_90px_0px]">
+      <div class="flex-1 px-8 py-8">
+        <h3 class="font-bold text-[16px]">Modern Living Room</h3>
+        <p class="text-[12px] text-gray-500 leading-6 mt-2 text-amber-200">Elegant sofas and furniture pieces designed to create a comfortable and stylish living space.</p>
+        <div class="flex gap-2 mt-4">
+          <span class="text-[10px] bg-[#1f2937] text-white px-4 py-1.5 rounded-full">SHOP NOW</span>
+          <span class="text-[10px] bg-[#7ec8e3] text-white px-4 py-1.5 rounded-full">VIEW</span>
+        </div>
+      </div>
+      <div class="w-80 h-52 shrink-0">
+        <img src="image/decor-3.jpeg" class="w-full h-full object-cover">
+      </div>
+    </div>
+    <div class="bg-[#fdf9f3] flex items-center overflow-hidden shadow-sm border border-black/5 border-l-4 border-l-[#3ab1d6]
+                [border-radius:0px_0px_90px_0px]">
+      <div class="flex-1 px-8 py-8">
+        <h3 class="font-bold text-[16px]">Elegant Bedroom</h3>
+        <p class="text-[12px] text-gray-500 leading-6 mt-2  text-amber-200">Beautiful bedroom furniture designed for comfort,relaxation, and a peaceful atmosphere</p>
+        <div class="flex gap-2 mt-4">
+          <span class="text-[10px] bg-[#1f2937] text-white px-4 py-1.5 rounded-full">SHOP NOW</span>
+          <span class="text-[10px] bg-[#7ec8e3] text-white px-4 py-1.5 rounded-full">VIEW</span>
+        </div>
+      </div>
+      <div class="w-80 h-52 shrink-0">
+        <img src="image/decor-14.jpeg" class="w-full h-full object-cover">
+      </div>
+    </div>
+    <div class="bg-[#fdf9f3] flex items-center overflow-hidden shadow-sm border border-black/5 border-l-4 border-l-[#3ab1d6]
+                [border-radius:0px_0px_90px_0px]">
+      <div class="flex-1 px-8 py-8">
+        <h3 class="font-bold text-[16px]">Dining Room Collection</h3>
+        <p class="text-[12px] text-gray-500 leading-6 mt-2  text-amber-200">Stylish dining tables and chairs designed for memorable meals and special moments.</p>
+        <div class="flex gap-2 mt-4">
+          <span class="text-[10px] bg-[#1f2937] text-white px-4 py-1.5 rounded-full">SHOP NOW</span>
+          <span class="text-[10px] bg-[#7ec8e3] text-white px-4 py-1.5 rounded-full">VIEW</span>
+        </div>
+      </div>
+      <div class=" md:w-80 h-52 shrink-0">
+        <img src="image/decor-10.jpeg" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="w-full bg-[#fdf9f3] py-12 px-4">
+  <h2 class="text-center text-[22px] font-bold text-[#1e293b] mb-10">Contact Us</h2>
+
+  <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+
+    <div class="flex flex-col items-center">
+      <div class="w-11 h-11 bg-[#1e3a5f] rounded-full flex items-center justify-center mb-3">
+        <i class="fa-solid fa-phone text-white text-[16px]"></i>
+      </div>
+      <p class="text-[11px] text-gray-500">Call Us</p>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <div class="w-11 h-11 bg-[#1e3a5f] rounded-full flex items-center justify-center mb-3">
+        <i class="fa-solid fa-envelope text-white text-[16px]"></i>
+      </div>
+      <p class="text-[11px] text-gray-500">Email Us</p>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <div class="w-11 h-11 bg-[#1e3a5f] rounded-full flex items-center justify-center mb-3">
+        <i class="fa-solid fa-comment-dots text-white text-[16px]"></i>
+      </div>
+      <p class="text-[11px] text-gray-500">Live Support</p>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <div class="w-11 h-11 bg-[#1e3a5f] rounded-full flex items-center justify-center mb-3">
+        <i class="fa-solid fa-location-dot text-white text-[16px]"></i>
+      </div>
+      <p class="text-[11px] text-gray-500">Our Location</p>
+    </div>
+  </div>
+</section>
+<!-- ...............................................................7................................................ -->
+<footer class="w-full h-40 bg-[#6ac4d3] text-white py-4 px-6">
+  <div class="max-w-5xl mx-auto flex flex-row justify-between text-[20px]">
+    <span>Maintenance Center</span>
+    <span>Help Center</span>
+    <span>Our Links</span>
+  </div>
+</footer>
+</body>
+</html>
